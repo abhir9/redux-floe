@@ -7,8 +7,8 @@ const mapStateToProps = state => {
 };
 const List = ({ notes }) => (
   <ul>
-    {notes.map(el => (
-      <li>{el}</li>
+    {notes.map((el, index) => (
+      <li key={index.toString()}>{el}</li>
     ))}
   </ul>
 );
